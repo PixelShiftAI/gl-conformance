@@ -40,7 +40,7 @@ function writeManifest (fileList) {
   }
   code.push(']')
   var codeStr = code.join('')
-  fs.writeFile('./node-test/index.js', codeStr)
+  fs.writeFile('./node-test/index.js', codeStr, 'utf-8', console.log)
   console.log('done!')
 }
 
@@ -70,7 +70,7 @@ function build () {
           if (str) {
             var fileName = result.caseName
             fileList.push(fileName)
-            fs.writeFile(path.join(TEST_DIR, fileName) + '.js', str)
+            fs.writeFile(path.join(TEST_DIR, fileName) + '.js', str, 'utf8', console.log)
           }
           decCount()
         }
