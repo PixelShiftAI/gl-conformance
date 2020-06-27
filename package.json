@@ -1,6 +1,6 @@
 {
   "name": "@pixelshift.ai/gl-conformance",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Khronos WebGL conformance test suite",
   "main": "run-test.js",
   "directories": {
